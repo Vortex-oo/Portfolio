@@ -3,6 +3,7 @@ import gsap from "gsap";
 import backgroundImage from "../assets/mask.svg"
 import { motion } from "framer-motion";
 import { text } from 'framer-motion/client';
+import { Navbar } from "../component/navbar.jsx";
 
 const Hero = () => {
   // Create refs for each element you want to animate
@@ -13,6 +14,7 @@ const Hero = () => {
   const locationRef = useRef(null)
   const workRef = useRef(null)
   const resumeRef = useRef(null)
+  const navbarRef = useRef(null)
 
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -63,6 +65,12 @@ const Hero = () => {
         delightfulRef.current,
         { opacity: 0, y: 100 },
         { opacity: 1, y: 0, duration: 0.87 },
+        "-=0.2  "
+      )
+      .fromTo(
+        navbarRef.current,
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 0.87 },
         "-=0.4"
       )
   }, [])
@@ -70,23 +78,23 @@ const Hero = () => {
 
   const [cursorVariants, setCursorVariants] = useState("default")
 
-  const variants ={
-    default:{
-      x: mousePosition.x-16,
-      y: mousePosition.y-16,
+  const variants = {
+    default: {
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16,
       transition: {
         type: "spring",
         stiffness: 500,
         damping: 28
       }
     },
-    text:{
-      x: mousePosition.x-16,
-      y: mousePosition.y-16,
-      height:150,
-      width:150,
+    text: {
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16,
+      height: 150,
+      width: 150,
       // color:,
-      backgroundColor:"#B5514D",
+      backgroundColor: "#B5514D",
       mixBlendMode: "difference",
       transition: {
         type: "spring",
@@ -98,11 +106,11 @@ const Hero = () => {
       },
       scale: 1.2
     },
-    text1:{
-      x: mousePosition.x-16,
-      y: mousePosition.y-16,
+    text1: {
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16,
       // color:,
-      backgroundColor:"#B5514D",
+      backgroundColor: "#B5514D",
       mixBlendMode: "difference",
       transition: {
         type: "spring",
@@ -116,10 +124,10 @@ const Hero = () => {
     }
   }
 
-  const textEnter = ()=>{
+  const textEnter = () => {
     setCursorVariants("text")
   }
-  const textLeave = ()=>{
+  const textLeave = () => {
     setCursorVariants("default")
   }
 
@@ -133,61 +141,72 @@ const Hero = () => {
           variants={variants}
           animate={cursorVariants}
         ></motion.div>
-  
+
+        <div className='absolute top-5 flex items-center w-full px-5' ref={navbarRef}  >
+          <div className='flex items-center justify-center gap-2 '>
+            <img src="https://utfs.io/f/2d51fe9c-199f-4de6-9d70-a8505c909c62-sg2m69.png" alt="logo" className='w-9 h-9 rounded-full' />
+            <h1 className='font-bold text-xl'  >DEBJIT</h1>
+          </div>
+          <div className='ml-auto'>
+            <Navbar />
+          </div>
+        </div>
+
+
         <div ref={welcomeRef} onMouseEnter={textEnter} onMouseLeave={textLeave}>
           <h1 className='text-sm md:text-base font-bold line'>Web Developer</h1>
         </div>
-  
-        <div 
-          className='  lg:text-[184px] italic font-extrabold mb-0 leading-[0.8] cursor-none' 
+
+        <div
+          className='  lg:text-[184px] italic font-extrabold mb-0 leading-[0.8] cursor-none'
           ref={creatingRef}
-          onMouseEnter={textEnter} 
+          onMouseEnter={textEnter}
           onMouseLeave={textLeave}
         >
           <h1 className='md:text-[160px]'  >CREATING</h1>
         </div>
-  
-        <div 
-          className=' md:text-[150px] lg:text-[184px] italic font-extrabold leading-[0.8] cursor-none' 
-          ref={delightfulRef} 
-          onMouseEnter={textEnter} 
+
+        <div
+          className=' md:text-[150px] lg:text-[184px] italic font-extrabold leading-[0.8] cursor-none'
+          ref={delightfulRef}
+          onMouseEnter={textEnter}
           onMouseLeave={textLeave}
         >
           <h1>DELIGHTFUL</h1>
         </div>
-  
-        <div 
-          className=' md:text-[50px] lg:text-[127px] italic leading-[0.5] mb-6 cursor-none' 
-          ref={momentsRef} 
-          onMouseEnter={textEnter} 
+
+        <div
+          className=' md:text-[50px] lg:text-[127px] italic leading-[0.5] mb-6 cursor-none'
+          ref={momentsRef}
+          onMouseEnter={textEnter}
           onMouseLeave={textLeave}
         >
           moments
         </div>
-  
-        <div 
-          className='text-xl md:text-2xl flex items-center gap-2 cursor-none' 
-          ref={locationRef} 
-          onMouseEnter={textEnter} 
+
+        <div
+          className='text-xl md:text-2xl flex items-center gap-2 cursor-none'
+          ref={locationRef}
+          onMouseEnter={textEnter}
           onMouseLeave={textLeave}
         >
           <h1>based in</h1>
           <span className='font-bold text-4xl md:text-6xl italic cursor-none'>INDIA</span>
         </div>
-  
-        <div 
-          className='absolute bottom-5 left-5 text-base md:text-xl font-mono indent-4 cursor-none' 
-          ref={workRef} 
-          onMouseEnter={() => setCursorVariants("text1")} 
+
+        <div
+          className='absolute bottom-5 left-5 text-base md:text-xl font-mono indent-4 cursor-none'
+          ref={workRef}
+          onMouseEnter={() => setCursorVariants("text1")}
           onMouseLeave={textLeave}
         >
           <h1>Open for Work</h1>
         </div>
-  
-        <div 
-          className='absolute bottom-5 right-5 text-base md:text-xl font-mono indent-4 cursor-none' 
-          ref={resumeRef} 
-          onMouseEnter={() => setCursorVariants("text1")} 
+
+        <div
+          className='absolute bottom-5 right-5 text-base md:text-xl font-mono indent-4 cursor-none'
+          ref={resumeRef}
+          onMouseEnter={() => setCursorVariants("text1")}
           onMouseLeave={textLeave}
         >
           <h1><a href="/" className='cursor-none'>Download Resume</a></h1>

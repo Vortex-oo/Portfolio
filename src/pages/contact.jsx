@@ -159,7 +159,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className="h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full">
+        <div className="h-screen w-full bg-[#1e2125] text-[#d5ccbb] font-[Yesteryear] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full">
             <div
                 className="lg:text-[184px] italic font-bold mb-0 leading-[0.8] cursor-none flex items-center gap-14"
                 ref={creatingRef}

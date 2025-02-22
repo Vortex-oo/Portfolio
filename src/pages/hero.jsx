@@ -121,6 +121,24 @@ const Hero = () => {
         }
       },
       scale: 1.2
+    },
+    text2: {
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16,
+      width:16,
+      height: 16,
+      // color:,
+      backgroundColor: "#B5514D",
+      mixBlendMode: "difference",
+      transition: {
+        type: "spring",
+        stiffness: 500,
+        damping: 28,
+        scale: {
+          duration: 0.2
+        }
+      },
+      scale: 1.2
     }
   }
 
@@ -142,7 +160,12 @@ const Hero = () => {
           animate={cursorVariants}
         ></motion.div>
 
-        <div className='absolute top-5 flex items-center w-full px-5' ref={navbarRef}  >
+        <div className='absolute top-5 flex items-center w-full px-5' ref={navbarRef}
+          onMouseEnter={()=>{
+            setCursorVariants("text2")
+          }}
+          onMouseLeave={textLeave}
+        >
           <div className='flex items-center justify-center gap-2 '>
             <img src="https://utfs.io/f/2d51fe9c-199f-4de6-9d70-a8505c909c62-sg2m69.png" alt="logo" className='w-9 h-9 rounded-full' />
             <h1 className='font-bold text-xl'  >DEBJIT</h1>

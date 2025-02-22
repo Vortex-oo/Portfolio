@@ -5,6 +5,7 @@ import Hero from './pages/hero'
 import Projects from './pages/projects'
 import About from './pages/about'
 import Contact from './pages/contact'
+import Layout from './component/Layout'
 
 
 

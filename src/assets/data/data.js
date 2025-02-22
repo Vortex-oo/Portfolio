@@ -8,12 +8,12 @@ export const data = [
         src: "https://utfs.io/f/4c3299a2-4985-4440-aaf9-b7b82fb130d3-1fqb.png"
     },
     {
-        name:"React",
-        src:"https://utfs.io/f/037b5efb-17d7-4c44-90df-d32a17e8f052-1sj3pb.png"
-    },
-    {
         name:"Java Script",
         src: "https://utfs.io/f/db14137f-9a8f-482d-b6cf-2799923de4ae-2mh.png"
+    },
+    {
+        name:"React",
+        src:"https://utfs.io/f/037b5efb-17d7-4c44-90df-d32a17e8f052-1sj3pb.png"
     },
     {
         name: "Node JS",

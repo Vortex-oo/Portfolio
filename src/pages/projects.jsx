@@ -6,11 +6,10 @@ const Projects = () => {
     return (
         <div className='h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear]'>
             <div className='pt-24'>
-                <hr className='pt-12 text-[#e9dfce]'  />
+                <hr className='mb-8 text-[#e9dfce]'  />
                     <HorizontalScroll />
-                <hr className='mt-12 text-[#e9dfce]  '  />
+                <hr className='mt-8 text-[#e9dfce]  '  />
             </div>
-
         </div>
     )
 }

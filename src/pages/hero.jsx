@@ -129,7 +129,7 @@ const Hero = () => {
     <div>
       <div className='h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full '>
         <motion.div
-          className='cursor z-10 w-9 h-9 rounded-full bg-[#B5514D] fixed top-0 left-0 pointer-events-none hidden md:block'
+          className='cursor  w-9 h-9 rounded-full bg-[#B5514D] fixed top-0 left-0 pointer-events-none z-20  hidden md:block'
           variants={variants}
           animate={cursorVariants}
         ></motion.div>

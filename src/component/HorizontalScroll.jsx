@@ -10,10 +10,10 @@ const HorizontalScroll = () => {
 
         if (scrollContainer) {
             const scrollAnimation = () => {
-                scrollContainer.scrollLeft += 1.85; // Speed of scroll
+                scrollContainer.scrollLeft += 1.85; 
 
                 if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
-                    scrollContainer.scrollLeft = 0; // Reset scroll to create infinite effect
+                    scrollContainer.scrollLeft = 0; 
                 }
 
                 animationFrame = requestAnimationFrame(scrollAnimation);

@@ -20,11 +20,11 @@ const About = () => {
             {
                 opacity: 1,
                 y: 0,
-                duration: 1,
+                duration: 5,
                 scrollTrigger: {
                     trigger: textRef.current,
-                    start: "top 80%",
-                    end: "top 40%",
+                    start: "top 65%",
+                    end: "top 20%",
                     scrub: true,
                 }
             }
@@ -37,11 +37,11 @@ const About = () => {
             {
                 opacity: 1,
                 x: 0,
-                duration: 1,
+                duration: 10,
                 scrollTrigger: {
                     trigger: textRef.current,
-                    start: "top 80%",
-                    end: "top 40%",
+                    start: "top 35%",
+                    end: "top 20%",
                     scrub: true,
                 }
             },

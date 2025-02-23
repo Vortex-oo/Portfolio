@@ -159,7 +159,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className="h-screen w-full bg-[#1e2125] text-[#d5ccbb] font-[Yesteryear] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full">
+        <div className=" relative  h-screen w-full bg-[#1e2125] text-[#d5ccbb] font-[Yesteryear] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full">
             <div
                 className="lg:text-[184px] italic font-bold mb-0 leading-[0.8] cursor-none flex items-center gap-14"
                 ref={creatingRef}
@@ -231,6 +231,9 @@ const Contact = () => {
                     />
                 </div>
             </div>
+            <footer className=" absolute bottom-5  text-center text-gray-400 text-sm flex flex-col items-center opacity-100 ">
+                <p>&copy; 2025 Vortex. All rights reserved.</p>
+            </footer>
         </div>
     );
 };

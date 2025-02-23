@@ -199,12 +199,12 @@ const Hero = () => {
         </div>
 
         <div
-          className=' md:text-[50px] lg:text-[127px] italic leading-[0.5] mb-6 cursor-none'
+          className=' md:text-[50px] lg:text-[127px] italic leading-[0.5] mb-6 mt-1 cursor-none'
           ref={momentsRef}
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
         >
-          moments
+          experiences
         </div>
 
         <div

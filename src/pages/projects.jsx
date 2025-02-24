@@ -5,7 +5,7 @@ import Show from '../component/show'
 
 const Projects = () => {
     return (
-        <div  className=' w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] pt-24'>
+        <div id='projects' className=' w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] pt-24'>
             <div className=' w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] px-9 '>
                 <Show />
             </div>

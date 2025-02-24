@@ -32,7 +32,7 @@ const About = () => {
             textRef.current,
             {
                 opacity: 0,
-                x: 50
+                x: 100
             },
             {
                 opacity: 1,
@@ -50,7 +50,7 @@ const About = () => {
     }, [])
 
     return (
-        <div className='relative min-h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] flex flex-col md:flex-row justify-center items-center px-4 md:px-8 lg:px-20 xl:px-80 py-10 md:py-0 gap-6 md:gap-10'>
+        <div id='about' className='relative min-h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] flex flex-col md:flex-row justify-center items-center px-4 md:px-8 lg:px-20 xl:px-80 py-10 md:py-0 gap-6 md:gap-10'>
             <img
                 ref={imageRef}
                 src="https://utfs.io/f/54659ee3-630f-490f-babe-ed59dfabadcd-l7j6gz.webp"

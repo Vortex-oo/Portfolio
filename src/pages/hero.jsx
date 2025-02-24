@@ -4,6 +4,7 @@ import backgroundImage from "../assets/mask.svg"
 import { motion } from "framer-motion";
 import { text } from 'framer-motion/client';
 import { Navbar } from "../component/navbar.jsx";
+// import Loading from '../component/Loading.jsx';
 
 const Hero = () => {
   // Create refs for each element you want to animate
@@ -36,7 +37,7 @@ const Hero = () => {
 
 
   useEffect(() => {
-    const tl = gsap.timeline()
+    const tl = gsap.timeline({delay: 0.6})
 
     tl.fromTo(
       welcomeRef.current,
@@ -82,6 +83,8 @@ const Hero = () => {
     default: {
       x: mousePosition.x - 16,
       y: mousePosition.y - 16,
+      backgroundColor: "#B5514D",
+      mixBlendMode: "difference",
       transition: {
         type: "spring",
         stiffness: 500,
@@ -152,7 +155,8 @@ const Hero = () => {
 
 
   return (
-    <div>
+    <div id='home'>
+      {/* <Loading />  */}
       <div className='h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full '>
         <motion.div
           className='cursor  w-9 h-9 rounded-full bg-[#B5514D] fixed top-0 left-0 pointer-events-none z-20  hidden md:block'

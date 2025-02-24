@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 export const Navbar = () => {
   return (
@@ -26,17 +27,17 @@ const SlideTabs = () => {
       }}
       className="relative mx-auto flex w-fit rounded-full bg-transparent px-7"
     >
-      <Tab setPosition={setPosition}>Home</Tab>
-      <Tab setPosition={setPosition}>Projects</Tab>
-      <Tab setPosition={setPosition}>About</Tab>
-      <Tab setPosition={setPosition}>contacts</Tab>
+      <Tab setPosition={setPosition} to="home">Home</Tab>
+      <Tab setPosition={setPosition} to="projects">Projects</Tab>
+      <Tab setPosition={setPosition} to="about">About</Tab>
+      <Tab setPosition={setPosition} to="contacts">Contacts</Tab>
 
       <Cursor position={position} />
     </ul>
   );
 };
 
-const Tab = ({ children, setPosition }) => {
+const Tab = ({ children, setPosition, to }) => {
   const ref = useRef(null);
 
   return (
@@ -55,7 +56,9 @@ const Tab = ({ children, setPosition }) => {
       }}
       className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase text-[#e9dfce] mix-blend-difference md:px-5 md:py-3 md:text-base"
     >
-      {children}
+      <Link to={to} smooth={true} duration={500}>
+        {children}
+      </Link>
     </li>
   );
 };

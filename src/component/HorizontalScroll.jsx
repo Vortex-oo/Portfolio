@@ -10,7 +10,7 @@ const HorizontalScroll = () => {
 
         if (scrollContainer) {
             const scrollAnimation = () => {
-                scrollContainer.scrollLeft += 1.85; 
+                scrollContainer.scrollLeft += 1.8; 
 
                 if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
                     scrollContainer.scrollLeft = 0; 

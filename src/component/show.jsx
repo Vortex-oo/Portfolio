@@ -83,6 +83,8 @@ const Show = () => {
         <div className="w-full px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10 relative">
             {/* ScanNGrub Section */}
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-x-10 mb-8 sm:mb-12 lg:mb-16 relative">
+
+
                 {/* Title for mobile */}
                 <div className="lg:hidden w-full text-center mb-6">
                     <h1 className="font-sans italic font-extrabold text-4xl sm:text-6xl">
@@ -113,7 +115,7 @@ const Show = () => {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-x-10 mb-8 sm:mb-12 lg:mb-16">
                 {/* Title for mobile */}
                 <div className="lg:hidden w-full text-center mb-6">
-                    <h1 className="font-sans italic font-extrabold text-4xl sm:text-6xl">
+                    <h1 className="font-sans italic font-extrabold text-4xl sm:text-6xl z-10  ">
                         Chess Clone
                     </h1>
                 </div>
@@ -128,7 +130,7 @@ const Show = () => {
                 </div>
 
                 {/* Desktop title */}
-                <div className="hidden lg:block absolute font-sans italic font-extrabold text-5xl xl:text-8xl bottom-36 left-0">
+                <div className="hidden lg:block absolute font-sans italic font-extrabold text-5xl xl:text-8xl bottom-36 left-0 z-10">
                     <h1>Chess Clone</h1>
                 </div>
 

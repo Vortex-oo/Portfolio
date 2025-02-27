@@ -159,79 +159,107 @@ const Contact = () => {
     }, []);
 
     return (
-        <div id="contacts" className=" relative  h-screen w-full bg-[#1e2125] text-[#d5ccbb] font-[Yesteryear] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full">
-            <div
-                className="lg:text-[184px] italic font-bold mb-0 leading-[0.8] cursor-none flex items-center gap-14"
-                ref={creatingRef}
-            >
-                <div className="text-[#B5514D] text-6xl font-bold italic flex flex-col items-center justify-center">
+        <div id="contacts" className="relative h-screen w-full bg-[#1e2125] text-[#d5ccbb] font-[Yesteryear] 
+            flex justify-center items-center flex-col leading-none 
+            px-4 sm:px-6 md:px-8 ">
+    
+            {/* Let's Create Section */}
+            <div className="w-full flex flex-col items-center lg:items-center lg:justify-center 
+                lg:text-[184px] italic font-bold mb-0 leading-[0.8] cursor-none lg:flex lg:flex-row lg:gap-14" 
+                ref={creatingRef}>
+                <div className="text-[#B5514D] text-4xl sm:text-5xl md:text-6xl lg:text-6xl 
+                    font-bold italic flex flex-row sm:flex-col items-center justify-center 
+                    gap-2 sm:gap-0 mb-1  lg:mb-0">
                     <h1>Let's</h1>
                     <h1>Create</h1>
                 </div>
-                <h1 className="md:text-[140px]">SOMETHING</h1>
+                <h1 className="text-6xl sm:text-8xl md:text-[120px] lg:text-[150px] text-center lg:text-center">
+                    SOMETHING
+                </h1>
             </div>
-
-            <div
-                className="md:text-[150px] lg:text-[170px] italic font-extrabold leading-[0.8] cursor-none"
-                ref={delightfulRef}
-            >
+    
+            {/* Meaningful Text */}
+            <div className="w-full text-center lg:text-center
+                text-5xl sm:text-7xl md:text-[130px] lg:text-[175px] 
+                italic font-extrabold leading-[0.8] cursor-none mb-1 lg:mb-0" 
+                ref={delightfulRef}>
                 <h1>MEANINGFUL</h1>
             </div>
-
-            <div
-                className="md:text-[50px] lg:text-[127px] italic leading-[0.5] mb-6 cursor-none"
-                ref={momentsRef}
-            >
+    
+            {/* Together Text */}
+            <div className="w-full text-center lg:text-center
+                text-4xl sm:text-4xl md:text-[40px] lg:text-[127px] 
+                italic lg:leading-[0.7] mb-0 lg:mb-3  cursor-none" 
+                ref={momentsRef}>
                 together
             </div>
-
-            <div
-                className="text-xl md:text-2xl flex items-center gap-10 mt-5  cursor-none"
-                ref={locationRef}
-            >
-                <div className="bg-white w-16 h-16 rounded-full" ref={instagramRef}  >
+    
+            {/* Social Icons */}
+            <div className="flex flex-wrap justify-center lg:justify-centre gap-4 sm:gap-6 lg:gap-10 mt-5 w-full" 
+                ref={locationRef}>
+                {/* Instagram */}
+                <div className="bg-white rounded-full
+                    w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16" 
+                    ref={instagramRef}>
                     <img
                         src="https://cdn.prod.website-files.com/61b74db330d7740923e4176b/61e71dd63660128126610916_social-instagram.svg"
                         alt="instagram"
-                        className="w-16 h-16 hover:scale-110"
+                        className="w-full h-full transition-transform duration-300 hover:scale-110"
                     />
                 </div>
-
-                <div className="bg-white w-16 h-16 rounded-full" ref={linkedinRef}  >
+    
+                {/* LinkedIn */}
+                <div className="bg-white rounded-full
+                    w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16" 
+                    ref={linkedinRef}>
                     <img
                         src="https://cdn.prod.website-files.com/61b74db330d7740923e4176b/61e9527d263afad4313cc5c2_Linekdin.svg"
                         alt="linkedin"
-                        className="w-16 h-16 hover:scale-110"
+                        className="w-full h-full transition-transform duration-300 hover:scale-110"
                     />
                 </div>
-
-                <div className="bg-white w-16 h-16 rounded-full" ref={dribbleRef}  >
+    
+                {/* Dribbble */}
+                <div className="bg-white rounded-full
+                    w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16" 
+                    ref={dribbleRef}>
                     <img
                         src="https://cdn.prod.website-files.com/61b74db330d7740923e4176b/61e9527d81a5bc73ee81ff5e_Dribbble.svg"
                         alt="dribble"
-                        className="w-16 h-16 hover:scale-110"
+                        className="w-full h-full transition-transform duration-300 hover:scale-110"
                     />
                 </div>
-
-                <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center" ref={githubRef}  >
+    
+                {/* GitHub */}
+                <div className="bg-white rounded-full flex justify-center items-center
+                    w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16" 
+                    ref={githubRef}>
                     <a href="https://github.com/Vortex-oo">
                         <img
                             src="https://utfs.io/f/a05b28c5-e2ef-4d71-beb2-fbd6ee89cdab-61mg60.1023x1024.png"
                             alt="github"
-                            className="w-10 h-10 hover:scale-110"
+                            className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 lg:w-10 lg:h-10 
+                                transition-transform duration-300 hover:scale-110"
                         />
                     </a>
                 </div>
-
-                <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center" ref={telegramRef}  >
+    
+                {/* Telegram */}
+                <div className="bg-white rounded-full flex justify-center items-center
+                    w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16" 
+                    ref={telegramRef}>
                     <img
                         src="https://utfs.io/f/a8f37fe8-adf0-4d32-8299-dadc90e43c67-mhzjlr.1024x919.png"
                         alt="telegram"
-                        className="w-9 h-9 hover:scale-110"
+                        className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-9 lg:h-9 
+                            transition-transform duration-300 hover:scale-110"
                     />
                 </div>
             </div>
-            <footer className=" absolute bottom-5  text-center text-gray-400 text-sm flex flex-col items-center opacity-100 ">
+    
+            {/* Footer */}
+            <footer className="absolute bottom-5 w-full text-center text-gray-400 
+                text-xs sm:text-sm lg:text-sm flex flex-col items-center">
                 <p>&copy; 2025 Vortex. All rights reserved.</p>
             </footer>
         </div>

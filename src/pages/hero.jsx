@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import gsap from "gsap";
 import backgroundImage from "../assets/mask.svg"
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import { text } from 'framer-motion/client';
 import { Navbar } from "../component/navbar.jsx";
 // import Loading from '../component/Loading.jsx';
@@ -16,6 +16,8 @@ const Hero = () => {
   const workRef = useRef(null)
   const resumeRef = useRef(null)
   const navbarRef = useRef(null)
+
+  const { scrollYProgress } = useScroll()
 
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -37,7 +39,7 @@ const Hero = () => {
 
 
   useEffect(() => {
-    const tl = gsap.timeline({delay: 0.6})
+    const tl = gsap.timeline({ delay: 0.6 })
 
     tl.fromTo(
       welcomeRef.current,
@@ -128,7 +130,7 @@ const Hero = () => {
     text2: {
       x: mousePosition.x - 16,
       y: mousePosition.y - 16,
-      width:16,
+      width: 16,
       height: 16,
       // color:,
       backgroundColor: "#B5514D",
@@ -156,8 +158,15 @@ const Hero = () => {
 
   return (
     <div id='home'>
-      {/* <Loading />  */}
       <div className='h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full '>
+
+
+        <motion.div
+          className='bg-[#B5514D] w-full h-2 fixed top-0 left-0 rounded-full z-50 origin-left '
+          style={{
+            scaleX: scrollYProgress
+          }}
+          ></motion.div>
         <motion.div
           className='cursor  w-9 h-9 rounded-full bg-[#B5514D] fixed top-0 left-0 pointer-events-none z-20  hidden md:block'
           variants={variants}
@@ -165,7 +174,7 @@ const Hero = () => {
         ></motion.div>
 
         <div className='absolute top-5 flex items-center w-full px-5' ref={navbarRef}
-          onMouseEnter={()=>{
+          onMouseEnter={() => {
             setCursorVariants("text2")
           }}
           onMouseLeave={textLeave}

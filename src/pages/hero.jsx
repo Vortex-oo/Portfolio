@@ -7,6 +7,17 @@ import { Navbar } from "../component/navbar.jsx";
 // import Loading from '../component/Loading.jsx';
 
 const Hero = () => {
+
+
+
+  //for testing the error boundary
+  // throw new Error("This is an error")
+
+  // if (Math.random() > 0.5) {
+  //   throw new Error("This is an error")
+    
+  // }
+
   // Create refs for each element you want to animate
   const welcomeRef = useRef(null)
   const creatingRef = useRef(null)

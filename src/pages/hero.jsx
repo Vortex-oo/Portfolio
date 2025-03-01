@@ -50,7 +50,7 @@ const Hero = () => {
 
 
   useEffect(() => {
-    const tl = gsap.timeline({ delay: 0.6 })
+    const tl = gsap.timeline({ delay: 0.4 })
 
     tl.fromTo(
       welcomeRef.current,

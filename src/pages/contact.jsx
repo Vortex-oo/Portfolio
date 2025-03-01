@@ -223,15 +223,19 @@ const Contact = () => {
 
                 </div>
 
-                {/* Dribbble */}
-                <div className="bg-white rounded-full
+                {/* Gmail */}
+                <div className="bg-white rounded-full  flex justify-center items-center
                     w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16"
                     ref={dribbleRef}>
-                    <img
-                        src="https://cdn.prod.website-files.com/61b74db330d7740923e4176b/61e9527d81a5bc73ee81ff5e_Dribbble.svg"
-                        alt="dribble"
-                        className="w-full h-full transition-transform duration-300 hover:scale-110"
-                    />
+                    <a href="mailto:debjitsen.wrok@gmail.com?subject=Hello%20Debjit&body=I%20wanted%20to%20get%20in%20touch%20with%20you.">
+                        <img
+                            src="https://utfs.io/f/a238c12b-4125-4cc2-b994-96e4afd586d8-70rk5i.png"
+                            alt="dribble"
+                            className="w-8  sm:w-9 sm:h-9 md:w-6 md:h-10 lg:w-9 lg:h-7 
+                                transition-transform duration-300 hover:scale-110"
+                        />
+                    </a>
+
                 </div>
 
                 {/* GitHub */}

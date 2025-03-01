@@ -1,13 +1,14 @@
-import { StrictMode } from 'react'
+import React, { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import Hero from './pages/hero'
-import Projects from './pages/projects'
-import About from './pages/about'
-import Contact from './pages/contact'
-import Layout from './component/Layout'
+const Hero = React.lazy(() => import('./pages/hero'))
+const Projects = React.lazy(() => import('./pages/projects'))
+const About = React.lazy(() => import('./pages/about'))
+const Contact = React.lazy(() => import('./pages/contact'))
+const Layout = React.lazy(() => import('./component/Layout'))
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorFallback from './component/ErrorFallback'
+import Loading from './component/Loading'
 
 
 createRoot(document.getElementById('root')).render(
@@ -18,10 +19,12 @@ createRoot(document.getElementById('root')).render(
         window.location.reload()
       }}
     >
-      <Hero />
-      <Projects />
-      <About />
-      <Contact />
+      <Suspense fallback={<Loading />}> 
+        <Hero />
+        <Projects />
+        <About />
+        <Contact />
+      </Suspense>
     </ErrorBoundary>
   </StrictMode>,
 )

@@ -169,9 +169,9 @@ const Hero = () => {
 
   return (
     <div id='home'>
-      <div className='h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full '>
+      <div className='h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full overflow-hidden '>
 
-
+        {/* progress bar */}
         <motion.div
           className='bg-[#B5514D] w-full h-2 fixed top-0 left-0 rounded-full z-50 origin-left '
           style={{
@@ -194,7 +194,7 @@ const Hero = () => {
             <img src="https://utfs.io/f/2d51fe9c-199f-4de6-9d70-a8505c909c62-sg2m69.png" alt="logo" className='w-9 h-9 rounded-full' />
             <h1 className='font-bold text-xl'  >DEBJIT</h1>
           </div>
-          <div className='ml-auto'>
+          <div className='ml-auto overflow-x-hidden'>
             <Navbar />
           </div>
         </div>

@@ -1,6 +1,6 @@
 const ErrorFallback = ({ error, resetError }) => {
   return (
-    <div className="min-h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] 
+    <div className="min-h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Serif] 
       flex flex-col justify-center items-center gap-6 px-4">
       
       {/* Error Title */}

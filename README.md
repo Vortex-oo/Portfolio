@@ -1,12 +1,46 @@
-# React + Vite
+# Portfolio 2.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the README file for the Portfolio 2.0 project.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
 
-## Expanding the ESLint configuration
+## Introduction
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Portfolio 2.0 is a modern and responsive portfolio website built to showcase your projects and skills. It is designed to be easy to customize and deploy.
+
+## Features
+
+- Responsive design
+- Easy to customize
+- Built with modern web technologies
+- SEO friendly
+- Fast and lightweight
+
+## Installation
+
+To get started with the project, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/yourusername/portfolio2.0.git
+cd portfolio2.0
+npm install
+```
+
+## Usage
+
+To start the development server, run:
+
+```bash
+npm start
+```
+
+To build the project for production, run:
+
+```bash
+npm run build
+```

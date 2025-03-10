@@ -233,7 +233,7 @@ const Hero = () => {
         </div>
 
         <div
-          className='absolute bottom-5 left-3 text-base md:text-xl font-mono indent-4 cursor-none'
+          className='absolute bottom-5 left-0 text-base md:text-xl font-mono indent-4 cursor-none'
           ref={workRef}
           onMouseEnter={() => setCursorVariants("text1")}
           onMouseLeave={textLeave}

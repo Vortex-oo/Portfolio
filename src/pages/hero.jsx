@@ -160,7 +160,7 @@ const Hero = () => {
 
   return (
     <div id='home'>
-      <div className='h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full overflow-hidden '>
+      <div className='h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Serif] text-4xl flex justify-center items-center flex-col leading-none px-4 md:w-full overflow-hidden '>
 
         {/* progress bar */}
         <motion.div

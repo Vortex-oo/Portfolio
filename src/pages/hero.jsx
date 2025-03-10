@@ -192,7 +192,7 @@ const Hero = () => {
 
 
         <div ref={welcomeRef} onMouseEnter={textEnter} onMouseLeave={textLeave}>
-          <h1 className='text-sm md:text-base font-bold line'>Developer</h1>
+          <h1 className='text-sm md:text-base font-bold line'>Web Developer</h1>
         </div>
 
         <div

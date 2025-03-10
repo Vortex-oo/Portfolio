@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+@layer components {
+    .mask-container {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .mask-content {
+        transition: mask-size 0.5s ease, -webkit-mask-size 0.5s ease;
+    }
+} */

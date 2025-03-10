@@ -26,7 +26,7 @@ const HorizontalScroll = () => {
     }, []);
 
     return (
-        <div className="banner-wrapper w-full h-24 overflow-hidden">
+        <div className="banner-wrapper w-full h-10  md:h-24 overflow-hidden">
             <div className="wrapper h-full flex items-center">
                 <div 
                     ref={containerRef}
@@ -37,12 +37,12 @@ const HorizontalScroll = () => {
                             key={index}
                             className="inline-flex items-center gap-2 mx-14 cursor-none"
                         >
-                            <div className="text-5xl font-sans font-bold text-[#e9dfce]">
+                            <div className=" text-3xl  md:text-5xl font-sans font-bold text-[#e9dfce]">
                                 {d.name}
                             </div>
                             <img 
                                 src={d.src} 
-                                className="w-[48px] h-[48px] object-contain" 
+                                className=" w-[38px] h-[38px]   md:w-[48px] md:h-[48px] object-contain" 
                                 alt={d.name} 
                             />
                         </div>

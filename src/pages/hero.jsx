@@ -205,7 +205,7 @@ const Hero = () => {
         </div>
 
         <div
-          className=' text-6xl lg:text-[184px] italic font-extrabold leading-[0.8] cursor-none'
+          className=' text-5xl lg:text-[184px] italic font-extrabold leading-[0.8] cursor-none'
           ref={delightfulRef}
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}

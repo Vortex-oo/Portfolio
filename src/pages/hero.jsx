@@ -168,7 +168,7 @@ const Hero = () => {
           style={{
             scaleX: scrollYProgress
           }}
-          ></motion.div>
+        ></motion.div>
         <motion.div
           className='cursor  w-9 h-9 rounded-full bg-[#B5514D] fixed top-0 left-0 pointer-events-none z-20  hidden md:block'
           variants={variants}
@@ -191,7 +191,7 @@ const Hero = () => {
         </div>
 
 
-        <div ref={welcomeRef} className='mb-3'  onMouseEnter={textEnter} onMouseLeave={textLeave}>
+        <div ref={welcomeRef} className='mb-3' onMouseEnter={textEnter} onMouseLeave={textLeave}>
           <h1 className='text-sm md:text-base font-bold line   '>Web Developer</h1>
         </div>
 
@@ -210,7 +210,8 @@ const Hero = () => {
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
         >
-          <h1>DELIGHTFUL</h1>
+          <h1 className="text-6xl sm:text-8xl md:text-[120px] lg:text-[150px] text-center lg:text-center">
+            DELIGHTFUL</h1>
         </div>
 
         <div

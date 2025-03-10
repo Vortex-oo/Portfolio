@@ -55,7 +55,7 @@ const About = () => {
                 ref={imageRef}
                 src="https://utfs.io/f/54659ee3-630f-490f-babe-ed59dfabadcd-l7j6gz.webp"
                 alt="Profile"
-                className='rounded-full w-48 md:w-64 lg:w-80'
+                className='rounded-full w-72 md:w-64 lg:w-80'
             />
             <div ref={textRef} className='max-w-2xl z-30 cursor-default'>
                 <p className='font-mono font-bold text-sm md:text-base lg:text-lg'>

@@ -87,7 +87,7 @@ const Show = () => {
 
                 {/* Title for mobile */}
                 <div className="lg:hidden w-full text-center mb-6">
-                    <h1 className="font-sans italic font-extrabold text-4xl sm:text-6xl">
+                    <h1 className="font-sans italic font-extrabold text-5xl sm:text-6xl">
                         SCANnGRUB
                     </h1>
                 </div>
@@ -115,7 +115,7 @@ const Show = () => {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-x-10 mb-8 sm:mb-12 lg:mb-16">
                 {/* Title for mobile */}
                 <div className="lg:hidden w-full text-center mb-6">
-                    <h1 className="font-sans italic font-extrabold text-4xl sm:text-6xl z-10  ">
+                    <h1 className="font-sans italic font-extrabold text-5xl sm:text-6xl z-10  ">
                         Chess Clone
                     </h1>
                 </div>

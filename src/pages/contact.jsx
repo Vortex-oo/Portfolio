@@ -159,7 +159,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <div id="contacts" className="relative h-screen w-full bg-[#1e2125] text-[#d5ccbb] font-[Yesteryear] 
+        <div id="contacts" className="relative h-screen w-full bg-[#1e2125] text-[#d5ccbb] font-[Serif] 
             flex justify-center items-center flex-col leading-none 
             px-4 sm:px-6 md:px-8  ">
 

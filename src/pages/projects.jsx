@@ -5,8 +5,8 @@ import Show from '../component/show'
 
 const Projects = () => {
     return (
-        <div id='projects' className=' w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] pt-24'>
-            <div className=' w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] px-9 '>
+        <div id='projects' className=' w-full bg-[#1e2125] text-[#e9dfce] font-[Serif] pt-24'>
+            <div className=' w-full bg-[#1e2125] text-[#e9dfce] font-[Serif] px-9 '>
                 <Show />
             </div>
             <div className='pt-24'>

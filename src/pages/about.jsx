@@ -66,7 +66,7 @@ const About = () => {
                 </p>
             </div>
 
-            <div className='absolute bottom-5 left-16 font-mono text-white text-sm md:text-lg font-bold  md:block'>
+            <div className='absolute bottom-5 left-16 font-mono text-white text-sm md:text-lg font-bold hidden md:block'>
                 <h1>[Scroll Down For Contacts]</h1>
             </div>
         </div>

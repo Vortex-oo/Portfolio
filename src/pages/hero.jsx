@@ -196,16 +196,16 @@ const Hero = () => {
         </div>
 
         <div
-          className='  lg:text-[184px] italic font-extrabold mb-0 leading-[0.8] cursor-none'
+          className='text-5xl lg:text-[160px] italic font-extrabold mb-0 leading-[0.8] cursor-none'
           ref={creatingRef}
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
         >
-          <h1 className='md:text-[160px]'  >CREATING</h1>
+          <h1 className>CREATING</h1>
         </div>
 
         <div
-          className=' md:text-[150px] lg:text-[184px] italic font-extrabold leading-[0.8] cursor-none'
+          className=' text-6xl lg:text-[184px] italic font-extrabold leading-[0.8] cursor-none'
           ref={delightfulRef}
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
@@ -223,7 +223,7 @@ const Hero = () => {
         </div>
 
         <div
-          className='text-xl md:text-2xl flex items-center gap-2 cursor-none'
+          className='text-xl md:text-2xl flex items-center md:gap-2 cursor-none   '
           ref={locationRef}
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}

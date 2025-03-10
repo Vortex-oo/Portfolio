@@ -191,8 +191,8 @@ const Hero = () => {
         </div>
 
 
-        <div ref={welcomeRef} onMouseEnter={textEnter} onMouseLeave={textLeave}>
-          <h1 className='text-sm md:text-base font-bold line'>Web Developer</h1>
+        <div ref={welcomeRef} className='mb-3'  onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <h1 className='text-sm md:text-base font-bold line   '>Web Developer</h1>
         </div>
 
         <div

@@ -104,7 +104,7 @@ const Show = () => {
                 <div className="w-full lg:w-auto">
                     <img
                         ref={scanImageRef}
-                        src="https://images.unsplash.com/photo-1739993655680-4b7050ed2896?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="https://utfs.io/f/ee1cbae9-d812-489d-9705-181b77408caf-cszuk1.png"
                         alt="ScanNGrub"
                         className="rounded-2xl sm:rounded-3xl lg:rounded-4xl w-full sm:w-[400px] lg:w-[500px] h-[300px] sm:h-[350px] lg:h-[400px] object-cover mx-auto lg:mx-12 scale-75 opacity-0"
                     />

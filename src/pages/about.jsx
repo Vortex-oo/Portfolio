@@ -53,9 +53,9 @@ const About = () => {
         <div id='about' className='relative min-h-screen w-full bg-[#1e2125] text-[#e9dfce] font-[Yesteryear] flex flex-col md:flex-row justify-center items-center px-4 md:px-8 lg:px-20 xl:px-80 py-10 md:py-0 gap-6 md:gap-10 overflow-hidden'>
             <img
                 ref={imageRef}
-                src="https://utfs.io/f/54659ee3-630f-490f-babe-ed59dfabadcd-l7j6gz.webp"
+                src="https://i.ibb.co/nqdpRWq6/IMG-20250311-205337.jpg"
                 alt="Profile"
-                className='rounded-full w-60 md:w-64 lg:w-80'
+                className='rounded-full w-60 md:w-60 lg:w-80 lg:h-80 '
             />
             <div ref={textRef} className='max-w-2xl z-30 cursor-default'>
                 <p className='font-mono font-bold text-sm md:text-base lg:text-lg'>

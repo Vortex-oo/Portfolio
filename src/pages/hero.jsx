@@ -4,6 +4,7 @@ import backgroundImage from "../assets/mask.svg"
 import { motion, useScroll } from "framer-motion";
 import { text } from 'framer-motion/client';
 import { Navbar } from "../component/navbar.jsx";
+import Navbar2 from '../component/navbar2.jsx';
 
 
 const Hero = () => {
@@ -169,6 +170,8 @@ const Hero = () => {
             scaleX: scrollYProgress
           }}
         ></motion.div>
+
+
         <motion.div
           className='cursor  w-9 h-9 rounded-full bg-[#B5514D] fixed top-0 left-0 pointer-events-none z-20  hidden md:block'
           variants={variants}
@@ -185,7 +188,13 @@ const Hero = () => {
             <img src="https://utfs.io/f/2d51fe9c-199f-4de6-9d70-a8505c909c62-sg2m69.png" alt="logo" className='w-9 h-9 rounded-full' />
             <h1 className='font-bold text-sm md:text-xl ' >DEBJIT</h1>
           </div>
-          <div className='ml-auto overflow-x-hidden'>
+
+          <div className='ml-auto overflow-x-hidden  md:hidden lg:hidden'>
+            <Navbar2 />
+          </div>
+
+          {/* for laptop screens */}
+          <div className='ml-auto overflow-x-hidden hidden md:block lg:block '>
             <Navbar />
           </div>
         </div>

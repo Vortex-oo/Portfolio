@@ -186,7 +186,7 @@ const Hero = () => {
         >
           <div className='flex items-center justify-center gap-2 '>
             <img src="https://utfs.io/f/2d51fe9c-199f-4de6-9d70-a8505c909c62-sg2m69.png" alt="logo" className='w-9 h-9 rounded-full' />
-            <h1 className='font-bold text-sm md:text-xl ' >DEBJIT</h1>
+            <h1 className='font-bold text-base md:text-xl ' >DEBJIT</h1>
           </div>
 
           <div className='ml-auto overflow-x-hidden  md:hidden lg:hidden'>

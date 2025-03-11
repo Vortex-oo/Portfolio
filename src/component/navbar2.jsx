@@ -16,27 +16,26 @@ const Navbar2 = () => {
     }
 
     return (
-        <div
+        <motion.div
+            variants={variants}
+            onClick={() => setPlusClicked(!plusClicked)}
+            className='bg-white text-black font-black  rounded-full w-3 h-3  p-2 flex justify-center items-center '
+            animate={
+                plusClicked ? 'default' : 'clicked'
+            }
+            transition={{
+                duration: 0.5
+            }}
         >
             <div className='flex gap-1 justify-center items-center cursor-pointer'>
                 <h1 className='text-base font-bold'  >
                     Menu
                 </h1>
-                <motion.div
-
-                    variants={variants}
-                    onClick={() => setPlusClicked(!plusClicked)}
-                    className='bg-white text-black font-black  rounded-full w-3 h-3  p-2 flex justify-center items-center '
-                    animate={
-                        plusClicked ? 'default' : 'clicked'
-                    }
-                    transition={{
-                        duration: 0.5
-                    }} >
+                <motion.div >
                     <h1 className='text-base font-extrabold'  ><FaPlus /></h1>
                 </motion.div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

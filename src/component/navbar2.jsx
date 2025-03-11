@@ -68,8 +68,8 @@ const Navbar2 = () => {
                         <div className='flex flex-col p-4 gap-4'>
                             {[
                                 { name: 'Home', to: 'home' },
-                                { name: 'About', to: 'about' },
                                 { name: 'Projects', to: 'projects' },
+                                { name: 'About', to: 'about' },
                                 { name: 'Contact', to: 'contacts' }
                             ].map((item, index) => (
                                 <motion.div

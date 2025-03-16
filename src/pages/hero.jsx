@@ -257,7 +257,7 @@ const Hero = () => {
           onMouseEnter={() => setCursorVariants("text1")}
           onMouseLeave={textLeave}
         >
-          <h1><a href="/" className='cursor-none'>Download Resume</a></h1>
+          <h1><a href="https://drive.google.com/file/d/1qfY8z39MDfQ3CfAUV3q1aWTuGnbrL-6R/view?usp=sharing" target='_blank'  className='cursor-pointer'>View Resume →</a></h1>
         </div>
       </div>
     </div>

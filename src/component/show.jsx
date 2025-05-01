@@ -116,14 +116,14 @@ const Show = () => {
                 {/* Title for mobile */}
                 <div className="lg:hidden w-full text-center mb-6">
                     <h1 className="font-sans italic font-extrabold text-5xl sm:text-6xl z-10  ">
-                        Chess Clone
+                        Cloud Drop
                     </h1>
                 </div>
 
                 <div className="w-full lg:w-auto order-2 lg:order-1">
                     <img
                         ref={chessImageRef}
-                        src="https://images.unsplash.com/photo-1739993655680-4b7050ed2896?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="https://res.cloudinary.com/dooekcvv0/image/upload/v1746072523/bxsj6fr7hldpyc3tb21t.png"
                         alt="ChessMaster"
                         className="rounded-2xl sm:rounded-3xl lg:rounded-4xl w-full sm:w-[400px] lg:w-[500px] h-[300px] sm:h-[350px] lg:h-[400px] object-cover mx-auto lg:mx-0 scale-75 opacity-0"
                     />
@@ -131,13 +131,16 @@ const Show = () => {
 
                 {/* Desktop title */}
                 <div className="hidden lg:block absolute font-sans italic font-extrabold text-5xl xl:text-8xl bottom-36 left-0 z-10">
-                    <h1>Chess Clone</h1>
+                    <h1>Cloud Drop</h1>
                 </div>
 
                 <p ref={chessTextRef} className="text-base sm:text-lg lg:text-xl max-w-[600px] font-semibold opacity-0 px-4 sm:px-0 text-center lg:text-left order-1 lg:order-2">
-                    ChessMaster is a sleek and intuitive chess clone designed for both casual players and enthusiasts. Built with a responsive UI and smooth gameplay mechanics, it offers a seamless experience across devices. Whether you're a beginner learning the game or a seasoned player looking for a challenge, ChessMaster provides a strategic and engaging environment. Featuring real-time move validation, piece animations, and a clean modern design, it captures the essence of classic chess while integrating the convenience of digital play.
+                    Cloud Drop is an innovative cloud storage solution designed to simplify file management for users. With a user-friendly interface and robust security features, it ensures seamless access to your files across devices. Whether you're organizing personal documents or collaborating on team projects, Cloud Drop provides a reliable and efficient platform. Featuring real-time synchronization, advanced sharing options, and scalable storage plans, it redefines the way you manage and store your data in the digital age.
                 </p>
             </div>
+
+            
+            
         </div>
     );
 };

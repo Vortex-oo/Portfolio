@@ -27,7 +27,7 @@ To get started with the project, clone the repository and install the dependenci
 
 ```bash
 git clone https://github.com/yourusername/portfolio2.0.git
-cd portfolio2.0
+cd portfolio
 npm install
 ```
 
